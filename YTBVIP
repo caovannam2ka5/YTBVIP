@@ -1,6 +1,6 @@
-#!name = YouTube Premium ( Hoàng Nam )
+#!name=Youtube Premium ( Hoàng Nam 👑 ) 
+#!desc=Crack By Hoàng Nam 👑
 
-#!desc =Crack By Hoàng Nam
 
 [Rule]
 AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
@@ -23,4 +23,4 @@ https?:\/\/youtubei\.googleapis\.com/.+ad_break reject header
 
 [Script]
 youtube.request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=-1,binary-body-mode=1,engine={{{è„šæœ¬æ‰§è¡Œå¼•æ“Ž}}},script-path=https://github.com/lonely0811/Surge/raw/main/js/youtube.request.preview.js
-youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch),requires-body=1,max-size=-1,binary-body-mode=1,engine={{{è„šæœ¬æ‰§è¡Œå¼•æ“Ž}}},script-path=https://github.com/lonely0811/Surge/raw/main/js/youtube.response.preview.js,argument="{"lyricLang":"{{{æ­Œè¯ç¿»è¯‘è¯­è¨€}}}","captionLang":"{{{å­—å¹•ç¿»è¯‘è¯­è¨€}}}","blockUpload":{{{å±è”½ä¸Šä¼ æŒ‰é’®}}},"blockImmersive":{{{å±è”½é€
+youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch),requires-body=1,max-size=-1,binary-body-mode=1,engine={{{è„šæœ¬æ‰§è¡Œå¼•æ“Ž}}},script-path=https://github.com/lonely0811/Surge/raw/main/js/youtube.response.preview.js,argument="{"lyricLang":"{{{æ­Œè¯ç¿»è¯‘è¯­è¨€}}}","captionLang":"{{{å­—å¹•ç¿»è¯‘è¯­è¨€}}}","blockUpload":{{{å±è”½ä¸Šä¼ æŒ‰é’®}}},"blockImmersive":{{{å±è”½é€‰æ®µæŒ‰é’®}}},"debug":{{{å¯ç”¨è°ƒè¯•æ¨¡å¼}}}}"
